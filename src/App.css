@@ -1,0 +1,137 @@
+/* GLOBAL */
+
+:root {
+    --old-paper: #f4f0e8d3;
+    --btn-primary: rgba(117, 91, 57, 0.411);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Satisfy', cursive;
+    color: black;
+    text-align: center;
+}
+
+/* THINGS */
+
+.things {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("./assets/paper.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+
+}
+
+.things_header {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 52px;
+    font-weight: 500;
+}
+
+/* THING FORM */
+
+.form_area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.input_form {
+    position: relative;
+    text-align: left;
+    padding-left: 3%;
+    height: 3.8rem;
+    width: 80%;
+    border-radius: 5rem;
+    font-weight: 600;
+    background-color: var(--old-paper);
+}
+
+.button_form {
+    position: absolute;
+    right: 11.5%;
+    height: 2.6rem;
+    padding: 0 1rem;
+    border: none;
+    background-color: var(--btn-primary);
+    border-radius: 5rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* THING */
+
+.thing_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    background-color: var(--old-paper);    
+    border: 2px solid rgba(0, 0, 0, 0.521);
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.main_content {
+    width: 100%;
+    font-size: 25px;
+}
+
+.icon {
+    margin-top: .5rem;
+    opacity: .3;
+    cursor: pointer;
+}
+
+/* THING COUNT */
+
+.count_area {
+    display: flex;
+    justify-content: center;
+}
+
+.count_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+.count {
+    position: relative;
+    top: .7rem;
+}
+
+.btn {
+    background-color: var(--btn-primary);
+    border: none;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 38px;
+    cursor: pointer;
+}
+
+/* ANIMATIONS */
+
+button {
+    transition: .2s linear;
+}
+
+button:hover {
+    background-color: rgba(117, 91, 57, 0.616);
+}
